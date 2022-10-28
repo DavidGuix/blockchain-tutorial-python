@@ -1,0 +1,10 @@
+name: blockchain_tutorial_python
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9.13
+  - pip=22.2.2
+  - pip:
+        - -r requirements.txt

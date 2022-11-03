@@ -44,4 +44,10 @@ After you complete sections 1, 2 and 3, I recommend you doing the proposed Exerc
 
         If you where already using jupyter, refreshing one of the notebooks if necessary and going to Kernel --> Change kernel, we should see a "BlockchainTutorial (Conda py3.9)" kernel that we can select.
 
+If at some point more modules are added to the requirements files, you can update the conda environment you already created with the following command:
+
+```bash
+conda env update --name blockchain_tutorial_python --file environment.yml --prune
+```
+
 If you are facing issues with creating a conda environment and a Jupyer kernel with it, you could just install all the required modules in your "main" (base) Python from a terminal using `"pip install"`  commands.

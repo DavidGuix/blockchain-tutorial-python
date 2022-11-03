@@ -1,0 +1,15 @@
+# Types
+types-requests
+types-pytz
+
+# Test dependencies
+tox
+pytest
+pytest-env
+pylint
+mypy
+coverage
+#pytest-xdist==2.5.0 #for distributed unit testing with pytest
+
+# Formatter dependencies
+black

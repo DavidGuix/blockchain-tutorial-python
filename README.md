@@ -6,7 +6,12 @@ We will focus mostly on the [Ethereum](https://ethereum.org) blockchain.
 
 For any comments about the tutorial (suggestions for improvement, typos, error reports, etc) you can [open an Issue](https://github.com/dsalgador/blockchain-tutorial-python/issues/new) or create a  [Pull Request](https://github.com/dsalgador/blockchain-tutorial-python/pulls). You can also contact me at `daniel.salgado.rojo@gmail.com`.
 
-After you complete sections 1, 2 and 3, I recommend you doing the proposed Exercises. You can fork this repository and work locally in your forked repo,
+Before start working with the tutorial notebook(s), please follow the steps in the [prerequisites & setup section](#prerequisites--setup).
+
+
+After you complete sections 1, 2 and 3, I recommend you doing the proposed Exercises. You can fork this repository and work locally in your forked repo.
+
+The reader is encouraged to provide its solutions to usecases it they are still not present in the `usecases/` directory via a pull request. Read the [usecase solutions guidelines section](#contributing-with-use-cases-requirements-and-guidelines) for more details about how to do it.
 
 
 ## Prerequisites & Setup
@@ -51,3 +56,16 @@ conda env update --name blockchain_tutorial_python --file environment.yml --prun
 ```
 
 If you are facing issues with creating a conda environment and a Jupyer kernel with it, you could just install all the required modules in your "main" (base) Python from a terminal using `"pip install"`  commands.
+
+
+## Contributing with Use cases: Requirements and guidelines
+
+
+0. Learn about basic contributing steps [here](https://gist.github.com/MarcDiethelm/7303312) (fork the repository, create a new branch....).
+1. Create a new subfolder inside the `usecases/` folder that is at the same level as the `src/` folder. The name of the subfolder should be representative for the use case you provide, lets call it `<A short folder name for your usecase>`.
+2. Create a new jupyter notebook inside the subfolder created in step 1.
+
+- Additional core code used outside of the notebook, should be located at `src/usecases/<A short folder name for your usecase>`
+- Structure the Jupyter cells of your use case solution alternating markdown (for explanations, background, etc) cells and code cells. Add some interpretable plots.
+- All code put in the src/ directory should pass code-quality tests. It is compulsory to pass the "tox" command, which tests the code with `pylint` and `mypy`. We are using the `typing` Python's module to type functions and classes.
+

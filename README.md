@@ -1,6 +1,6 @@
 # Blockchain Tutorial with Python
 
-In this tutorial you will learn the basic notions and knowledge about the Blockchain technology as well as some practical examples about retrieving and visualizing data from a blockchain via public APIs with Python.
+In this tutorial, you will learn the basic notions and knowledge about Blockchain technology as well as some practical examples about retrieving and visualizing data from a blockchain via public APIs with Python.
 
 We will focus mostly on the [Ethereum](https://ethereum.org) blockchain.
 
@@ -9,20 +9,20 @@ For any comments about the tutorial (suggestions for improvement, typos, error r
 Before start working with the tutorial notebook(s), please follow the steps in the [prerequisites & setup section](#prerequisites--setup).
 
 
-After you complete sections 1, 2 and 3, I recommend you doing the proposed Exercises. You can fork this repository and work locally in your forked repo.
+After you complete sections 1, 2 and 3, I recommend you do the proposed Exercises. You can fork this repository and work locally in your forked repo.
 
-The reader is encouraged to provide its solutions to usecases it they are still not present in the `usecases/` directory via a pull request. Read the [usecase solutions guidelines section](#contributing-with-use-cases-requirements-and-guidelines) for more details about how to do it.
+The reader is encouraged to provide its solutions to use cases if they are still not present in the `usecases/` directory via a pull request. Read the [usecase solutions guidelines section](#contributing-with-use-cases-requirements-and-guidelines) for more details about how to do it.
 
 
 ## Prerequisites & Setup
 
-1. To execute the code in Section 3, you will need to fill the `api_keys.json` file with your own API keys, as you will see when you follow the tutorial.
+1. To execute the code in Section 3, you will need to fill the `api_keys.json` file with your API keys, as you will see when you follow the tutorial.
 
 2. Install a Python environment with the modules listed in the `requirements.txt`. You may need to install `jupyter notebook` too. If you can use `conda`, follow the steps below:
 
     ### Environment setup with 'conda' (Tested in Ubuntu 20.04)
 
-    * Step 1. Create conda environment from environment.yml file. From the terminal in the project folder run
+    * Step 1. Create conda environment from `environment.yml` file. From the terminal in the project folder run
         ``` 
         conda env create -f environment.yml
         ```
@@ -47,7 +47,7 @@ The reader is encouraged to provide its solutions to usecases it they are still 
         (blockchain_tutorial_python) jupyter notebook
         ```
 
-        If you where already using jupyter, refreshing one of the notebooks if necessary and going to Kernel --> Change kernel, we should see a "BlockchainTutorial (Conda py3.9)" kernel that we can select.
+        If you were already using Jupyter, refreshing one of the notebooks if necessary and going to Kernel --> Change kernel, we should see a "BlockchainTutorial (Conda py3.9)" kernel that we can select.
 
 If at some point more modules are added to the requirements files, you can update the conda environment you already created with the following command:
 
@@ -62,10 +62,9 @@ If you are facing issues with creating a conda environment and a Jupyer kernel w
 
 
 0. Learn about basic contributing steps [here](https://gist.github.com/MarcDiethelm/7303312) (fork the repository, create a new branch....).
-1. Create a new subfolder inside the `usecases/` folder that is at the same level as the `src/` folder. The name of the subfolder should be representative for the use case you provide, lets call it `<A short folder name for your usecase>`.
+1. Create a new subfolder inside the `usecases/` folder that is at the same level as the `src/` folder. The name of the subfolder should be representative of the use case you provide, let's call it `<A short folder name for your usecase>`.
 2. Create a new jupyter notebook inside the subfolder created in step 1.
 
 - Additional core code used outside of the notebook, should be located at `src/usecases/<A short folder name for your usecase>`
 - Structure the Jupyter cells of your use case solution alternating markdown (for explanations, background, etc) cells and code cells. Add some interpretable plots.
-- All code put in the src/ directory should pass code-quality tests. It is compulsory to pass the "tox" command, which tests the code with `pylint` and `mypy`. We are using the `typing` Python's module to type functions and classes.
-
+- All code put in the src/ directory should pass code-quality tests. It is compulsory to pass the `tox` command, which tests the code with `pylint` and `mypy`. We are using the `typing` Python's module to type functions and classes.
